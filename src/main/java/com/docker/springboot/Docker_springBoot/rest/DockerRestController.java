@@ -18,8 +18,8 @@ public class DockerRestController {
 //	@Autowired
 //	private DockerRepo repo;
 	
-	@Autowired 
-	private BookJPARepo bookRepo;
+//	@Autowired 
+//	private BookJPARepo bookRepo;
 	
 	private Logger logger = LoggerFactory.getLogger(DockerRestController.class);
 
@@ -53,16 +53,16 @@ public class DockerRestController {
 //		return repo.getNameById(id);
 //	}
 	
-	@GetMapping("/getAllBooks")
-	public List<Book> getAllBooks(){
-		logger.info("getAllBooks started");
-		return bookRepo.findAll();
-	}
-	
-	@PostMapping("/addBook")
-	public Book addBook(@RequestBody Book book) {
-		logger.info("addBook started");
-		return bookRepo.save(book);
-	}
+//	@GetMapping("/getAllBooks")
+//	public List<Book> getAllBooks(){
+//		logger.info("getAllBooks started");
+//		return bookRepo.findAll();
+//	}
+//	
+//	@PostMapping("/addBook")
+//	public Book addBook(@RequestBody Book book) {
+//		logger.info("addBook started");
+//		return bookRepo.save(book);
+//	}
 }
 
