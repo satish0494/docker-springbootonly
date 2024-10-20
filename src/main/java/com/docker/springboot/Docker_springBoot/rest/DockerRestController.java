@@ -40,6 +40,7 @@ public class DockerRestController {
 	public String greetMsg() {
 		logger.info("***** greetMsg() execution start *****");
 		String msg = "Good Morning, Welcome to Satish";
+		msg += "/nThis is new version";
 		System.out.println("testing git collaboration");
 		logger.info("***** greetMsg() execution end *****");
 		logger.info("***** greetMsg() execution successfull *****");
